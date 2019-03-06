@@ -1,0 +1,24 @@
+/*browers often apply defaults instead of using for defaults. We need this rule to apply consistent files so forms will inherit parent element styles instead of browser default*/
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem;
+}
+
+input [type=submit] {
+  width: 100%;
+  background-color: SteelBlue;
+}
+
+input [type=password]:focus {
+  background-color: seagreen;
+  outine: none;
+  /*outline none because most browsers have a blue outline*/
+}
+
+/*round out corners of input*/
+input {
+  border-radius: 15px;
+}
