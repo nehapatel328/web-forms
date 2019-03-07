@@ -29,22 +29,26 @@
       <label>Why do you want to adopt a new pet?
         <textarea name="applicantReason" rows="4" cols="50">Because I love puppies :)</textarea><!--row is how tall and cols is how wide it is-->
 
-      <fieldset>
+      <fieldset class="checkbox"><!--fieldset elements do NOT work with grids! NOte that fieldset has default values of a blcok display, border, padding, and margins-->
         <legend>What types of animals are you interested in?</legend>
         <label> Dogs
           <input type="checkbox" name="species" value="dogs">
+          <span class="checkmark"></span><!--challenges with customizing checkbox inputs is that you can't really style the browser's default checkboxes so we've created these span elements that are going to act like our new checkmark boxes and so we're going into CSS to hide the default and only see our spans-->
         </label>
 
         <label> Cats
           <input type="checkbox" name="species" value="cats">
+          <span class="checkmark"></span>
         </label>
 
         <label> Iguanas
           <input type="checkbox" name="species" value="iguanas">
+          <span class="checkmark"></span>
         </label>
 
         <label> Hamsters
           <input type="checkbox" name="species" value="hamsters">
+          <span class="checkmark"></span>
         </label>
       </fieldset>
       <!--name is what labels the data when the form is submitted. So each has a value, we define value for each of the checkboxes. So first one is a VALUE of dogs, etc, but they all have the same NAME because they are all answers to the same question-->
