@@ -26,6 +26,53 @@
         <input type="number" name="petCount">
       </label> <!--will need validation in handler to avoid negative numbers-->
 
+      <label>Why do you want to adopt a new pet?
+        <textarea name="applicantReason" rows="4" cols="50">Because I love puppies :)</textarea><!--row is how tall and cols is how wide it is-->
+
+      <fieldset>
+        <legend>What types of animals are you interested in?</legend>
+        <label> Dogs
+          <input type="checkbox" name="species" value="dogs">
+        </label>
+
+        <label> Cats
+          <input type="checkbox" name="species" value="cats">
+        </label>
+
+        <label> Iguanas
+          <input type="checkbox" name="species" value="iguanas">
+        </label>
+
+        <label> Hamsters
+          <input type="checkbox" name="species" value="hamsters">
+        </label>
+      </fieldset>
+      <!--name is what labels the data when the form is submitted. So each has a value, we define value for each of the checkboxes. So first one is a VALUE of dogs, etc, but they all have the same NAME because they are all answers to the same question-->
+
+      <fieldset>
+        <legend>Are you interested in adopting special needs or elderly pets?</legend>
+
+        <label>
+          <input type="radio" name="special" value="yes">
+          Yes <!--answer after input makes more sense for American users-->
+        </label><!--radio button means that a user can only select one-->
+
+        <label>
+          <input type="radio" name="special" value="no">
+          No
+        </label>
+      </fieldset>
+
+      <label>
+        How many hours a day is someone usually home to keep a pet company?
+        <select name="hours"><!--need option element to list out options-->
+          <option value="">Please select</option><!--so if a user doesn't select, the data will be collected-->
+          <option value="few">less than 10</option>
+          <option value="some">10 to 16</option>
+          <option value="many">more than 16</option>
+        </select>
+      </label>
+
       <label>To create account, enter a password
         <input type="password" name="accountPW">
       </label>
